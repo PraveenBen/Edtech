@@ -1,105 +1,164 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Lesson player</title>
-<script src="./vendor/react.js"></script>
-<script src="./vendor/react-dom.js"></script>
-<script src="./support.js"></script>
+  <meta charset="utf-8">
+  <title>Lesson player</title>
+  <script src="./vendor/react.js"></script>
+  <script src="./vendor/react-dom.js"></script>
+  <script src="./support.js"></script>
 </head>
+
 <body>
-<x-dc>
-<helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap">
-<style>
-body{margin:0;background:#F6F4EF;font-family:'Sora',system-ui,sans-serif;color:#16213E}
-a{color:#16213E;text-decoration:none}
-a:hover{color:#C8903E}
-h1,h2,h3{font-family:'Literata',Georgia,serif;margin:0}
-</style>
-</helmet>
-<div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column">
+  <x-dc>
+    <helmet>
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap">
+      <style>
+        body {
+          margin: 0;
+          background: #F6F4EF;
+          font-family: 'Sora', system-ui, sans-serif;
+          color: #16213E
+        }
 
-  <header style="display:flex;align-items:center;justify-content:space-between;padding:20px 64px;border-bottom:1px solid #DCD6C8;flex-wrap:wrap;gap:12px">
-    <a href="index.html" style="font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16213E" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
-      Back to courses
-    </a>
-    <div style="font-family:'Literata',serif;font-size:18px;font-weight:700">Anchor Institute</div>
-    <div style="width:36px;height:36px;border-radius:50%;background:#16213E;color:#F6F4EF;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600">AK</div>
-  </header>
+        a {
+          color: #16213E;
+          text-decoration: none
+        }
 
-  <div style="display:flex;flex-wrap:wrap;padding:0 64px 64px">
+        a:hover {
+          color: #C8903E
+        }
 
-    <div style="flex:999 1 560px;min-width:0;padding:32px 32px 0 0;display:flex;flex-direction:column;gap:20px">
-      <div style="background:#16213E;border-radius:10px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative">
-        <div style="width:72px;height:72px;border-radius:50%;background:{{accent}};display:flex;align-items:center;justify-content:center">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="#16213E"><path d="M8 5v14l11-7z"></path></svg>
+        h1,
+        h2,
+        h3 {
+          font-family: 'Literata', Georgia, serif;
+          margin: 0
+        }
+      </style>
+    </helmet>
+    <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column">
+
+      <header
+        style="display:flex;align-items:center;justify-content:space-between;padding:20px 64px;border-bottom:1px solid #DCD6C8;flex-wrap:wrap;gap:12px">
+        <a href="index.html" style="font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16213E" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"></path>
+          </svg>
+          Back to courses
+        </a>
+        <div style="font-family:'Literata',serif;font-size:18px;font-weight:700">Sharadha Institute</div>
+        <div
+          style="width:36px;height:36px;border-radius:50%;background:#16213E;color:#F6F4EF;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600">
+          AK</div>
+      </header>
+
+      <div style="display:flex;flex-wrap:wrap;padding:0 64px 64px">
+
+        <div style="flex:999 1 560px;min-width:0;padding:32px 32px 0 0;display:flex;flex-direction:column;gap:20px">
+          <div
+            style="background:#16213E;border-radius:10px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative">
+            <div
+              style="width:72px;height:72px;border-radius:50%;background:{{accent}};display:flex;align-items:center;justify-content:center">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="#16213E">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+            <div style="position:absolute;bottom:0;left:0;right:0;height:4px;background:#2E3B63">
+              <div style="width:62%;height:100%;background:{{accent}}"></div>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <h1 style="font-size:26px">Newton's Laws of Motion — Chapter 4</h1>
+            <div style="font-size:14px;color:#5B6478">NEET Physics Foundation · 42 min · Taught by Dr. R. Sharma</div>
+          </div>
+
+          <div style="display:flex;gap:28px;border-bottom:1px solid #DCD6C8">
+            <div style="padding:12px 0;font-size:15px;font-weight:600;border-bottom:2px solid {{accent}}">Overview</div>
+            <div style="padding:12px 0;font-size:15px;color:#5B6478">Notes</div>
+            <div style="padding:12px 0;font-size:15px;color:#5B6478">Discussion</div>
+          </div>
+
+          <p style="font-size:15px;line-height:1.7;color:#5B6478;max-width:640px;margin:0">This lesson covers Newton's
+            three laws of motion with worked examples from past NEET and JEE papers, common misconceptions, and a short
+            practice set at the end. Watch the full video before attempting the chapter test.</p>
         </div>
-        <div style="position:absolute;bottom:0;left:0;right:0;height:4px;background:#2E3B63">
-          <div style="width:62%;height:100%;background:{{accent}}"></div>
+
+        <div style="flex:1 1 320px;min-width:280px;padding:32px 0 0;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline">
+              <h2 style="font-size:16px">Course content</h2>
+              <span style="font-size:13px;color:#5B6478">4 / 12 chapters</span>
+            </div>
+            <div style="height:6px;background:#DCD6C8;border-radius:3px;overflow:hidden">
+              <div style="width:33%;height:100%;background:{{accent}}"></div>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;border:1px solid #DCD6C8;border-radius:8px;overflow:hidden">
+
+            <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7A6B" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:500">Kinematics basics</div>
+                <div style="font-size:12px;color:#5B6478">24 min</div>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7A6B" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:500">Equations of motion</div>
+                <div style="font-size:12px;color:#5B6478">31 min</div>
+              </div>
+            </div>
+
+            <div
+              style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8;background:#FBF4E7">
+              <div style="width:18px;height:18px;border-radius:50%;background:{{accent}};flex-shrink:0"></div>
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:600">Newton's Laws of Motion</div>
+                <div style="font-size:12px;color:#5B6478">42 min · in progress</div>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9AA4BE" stroke-width="2">
+                <rect x="5" y="11" width="14" height="9" rx="2"></rect>
+                <path d="M8 11V7a4 4 0 018 0v4"></path>
+              </svg>
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:500;color:#9AA4BE">Friction and its applications</div>
+                <div style="font-size:12px;color:#9AA4BE">28 min</div>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:12px;padding:14px 16px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9AA4BE" stroke-width="2">
+                <rect x="5" y="11" width="14" height="9" rx="2"></rect>
+                <path d="M8 11V7a4 4 0 018 0v4"></path>
+              </svg>
+              <div style="flex:1">
+                <div style="font-size:14px;font-weight:500;color:#9AA4BE">Circular motion</div>
+                <div style="font-size:12px;color:#9AA4BE">35 min</div>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-      <div style="display:flex;flex-direction:column;gap:6px">
-        <h1 style="font-size:26px">Newton's Laws of Motion — Chapter 4</h1>
-        <div style="font-size:14px;color:#5B6478">NEET Physics Foundation · 42 min · Taught by Dr. R. Sharma</div>
       </div>
-
-      <div style="display:flex;gap:28px;border-bottom:1px solid #DCD6C8">
-        <div style="padding:12px 0;font-size:15px;font-weight:600;border-bottom:2px solid {{accent}}">Overview</div>
-        <div style="padding:12px 0;font-size:15px;color:#5B6478">Notes</div>
-        <div style="padding:12px 0;font-size:15px;color:#5B6478">Discussion</div>
-      </div>
-
-      <p style="font-size:15px;line-height:1.7;color:#5B6478;max-width:640px;margin:0">This lesson covers Newton's three laws of motion with worked examples from past NEET and JEE papers, common misconceptions, and a short practice set at the end. Watch the full video before attempting the chapter test.</p>
     </div>
-
-    <div style="flex:1 1 320px;min-width:280px;padding:32px 0 0;display:flex;flex-direction:column;gap:16px">
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="display:flex;justify-content:space-between;align-items:baseline">
-          <h2 style="font-size:16px">Course content</h2>
-          <span style="font-size:13px;color:#5B6478">4 / 12 chapters</span>
-        </div>
-        <div style="height:6px;background:#DCD6C8;border-radius:3px;overflow:hidden">
-          <div style="width:33%;height:100%;background:{{accent}}"></div>
-        </div>
-      </div>
-
-      <div style="display:flex;flex-direction:column;border:1px solid #DCD6C8;border-radius:8px;overflow:hidden">
-
-        <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7A6B" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>
-          <div style="flex:1"><div style="font-size:14px;font-weight:500">Kinematics basics</div><div style="font-size:12px;color:#5B6478">24 min</div></div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F7A6B" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>
-          <div style="flex:1"><div style="font-size:14px;font-weight:500">Equations of motion</div><div style="font-size:12px;color:#5B6478">31 min</div></div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8;background:#FBF4E7">
-          <div style="width:18px;height:18px;border-radius:50%;background:{{accent}};flex-shrink:0"></div>
-          <div style="flex:1"><div style="font-size:14px;font-weight:600">Newton's Laws of Motion</div><div style="font-size:12px;color:#5B6478">42 min · in progress</div></div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #DCD6C8">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9AA4BE" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></svg>
-          <div style="flex:1"><div style="font-size:14px;font-weight:500;color:#9AA4BE">Friction and its applications</div><div style="font-size:12px;color:#9AA4BE">28 min</div></div>
-        </div>
-
-        <div style="display:flex;align-items:center;gap:12px;padding:14px 16px">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9AA4BE" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></svg>
-          <div style="flex:1"><div style="font-size:14px;font-weight:500;color:#9AA4BE">Circular motion</div><div style="font-size:12px;color:#9AA4BE">35 min</div></div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E2A33B","options":["#E2A33B","#C65D3B","#2F7A6B","#4C6EF5"]},"$preview":{"width":1440,"height":900}}'>
+  </x-dc>
+  <script type="text/x-dc" data-dc-script
+    data-props='{"accent":{"editor":"color","default":"#E2A33B","options":["#E2A33B","#C65D3B","#2F7A6B","#4C6EF5"]},"$preview":{"width":1440,"height":900}}'>
 class Component extends DCLogic {
   renderVals() {
     return { accent: this.props.accent ?? '#E2A33B' };
@@ -107,4 +166,5 @@ class Component extends DCLogic {
 }
 </script>
 </body>
+
 </html>

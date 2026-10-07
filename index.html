@@ -1,131 +1,187 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Course catalog</title>
-<script src="./vendor/react.js"></script>
-<script src="./vendor/react-dom.js"></script>
-<script src="./support.js"></script>
+  <meta charset="utf-8">
+  <title>Course catalog</title>
+  <script src="./vendor/react.js"></script>
+  <script src="./vendor/react-dom.js"></script>
+  <script src="./support.js"></script>
 </head>
+
 <body>
-<x-dc>
-<helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap">
-<style>
-body{margin:0;background:#F6F4EF;font-family:'Sora',system-ui,sans-serif;color:#16213E}
-a{color:#16213E;text-decoration:none}
-a:hover{color:#C8903E}
-h1,h2,h3{font-family:'Literata',Georgia,serif;margin:0}
-</style>
-</helmet>
-<div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column">
+  <x-dc>
+    <helmet>
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap">
+      <style>
+        body {
+          margin: 0;
+          background: #F6F4EF;
+          font-family: 'Sora', system-ui, sans-serif;
+          color: #16213E
+        }
 
-  <header style="display:flex;align-items:center;justify-content:space-between;padding:24px 64px;flex-wrap:wrap;gap:16px;border-bottom:1px solid #DCD6C8">
-    <div style="font-family:'Literata',serif;font-size:24px;font-weight:700;color:#16213E">Anchor Institute</div>
-    <nav style="display:flex;gap:32px;align-items:center;flex-wrap:wrap">
-      <a href="#" style="font-size:15px;font-weight:500">Courses</a>
-      <a href="#" style="font-size:15px;font-weight:500">Results</a>
-      <a href="#" style="font-size:15px;font-weight:500">About</a>
-    </nav>
-    <div style="display:flex;gap:12px;align-items:center">
-      <a href="#" style="font-size:15px;font-weight:500">Log in</a>
-      <a href="#" style="background:{{accent}};color:#16213E;padding:10px 20px;border-radius:4px;font-size:15px;font-weight:600">Enroll now</a>
-    </div>
-  </header>
+        a {
+          color: #16213E;
+          text-decoration: none
+        }
 
-  <section style="display:flex;flex-wrap:wrap;gap:48px;padding:80px 64px;align-items:center">
-    <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:24px;min-width:0">
-      <h1 style="font-size:48px;line-height:1.15;color:#16213E">Learn physics and chemistry the way toppers do</h1>
-      <p style="font-size:17px;line-height:1.6;color:#5B6478;max-width:480px;margin:0">Structured video courses, weekly tests and doubt-clearing sessions for NEET and JEE aspirants — taught by faculty who've mentored 2,000+ selections.</p>
-      <div style="display:flex;gap:16px;flex-wrap:wrap">
-        <a href="Lesson.dc.html" style="background:#16213E;color:#F6F4EF;padding:14px 28px;border-radius:4px;font-size:16px;font-weight:600">Browse courses</a>
-        <a href="#" style="border:1.5px solid #16213E;color:#16213E;padding:12.5px 28px;border-radius:4px;font-size:16px;font-weight:600">Watch a free class</a>
-      </div>
-      <div style="display:flex;gap:32px;padding-top:16px;flex-wrap:wrap">
-        <div><div style="font-size:24px;font-weight:700;font-family:'Literata',serif">38,000+</div><div style="font-size:13px;color:#5B6478">students enrolled</div></div>
-        <div><div style="font-size:24px;font-weight:700;font-family:'Literata',serif">2,000+</div><div style="font-size:13px;color:#5B6478">NEET/JEE selections</div></div>
-        <div><div style="font-size:24px;font-weight:700;font-family:'Literata',serif">4.8/5</div><div style="font-size:13px;color:#5B6478">average rating</div></div>
-      </div>
-    </div>
-    <div style="flex:1 1 420px;min-width:320px">
-      <div style="background:#16213E;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:16px">
-        <div style="background:#223158;border-radius:8px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center">
-          <div style="width:64px;height:64px;border-radius:50%;background:{{accent}};display:flex;align-items:center;justify-content:center">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#16213E"><path d="M8 5v14l11-7z"></path></svg>
+        a:hover {
+          color: #C8903E
+        }
+
+        h1,
+        h2,
+        h3 {
+          font-family: 'Literata', Georgia, serif;
+          margin: 0
+        }
+      </style>
+    </helmet>
+    <div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column">
+
+      <header
+        style="display:flex;align-items:center;justify-content:space-between;padding:24px 64px;flex-wrap:wrap;gap:16px;border-bottom:1px solid #DCD6C8">
+        <div style="font-family:'Literata',serif;font-size:24px;font-weight:700;color:#16213E">Sharadha Institute</div>
+        <nav style="display:flex;gap:32px;align-items:center;flex-wrap:wrap">
+          <a href="#" style="font-size:15px;font-weight:500">Courses</a>
+          <a href="#" style="font-size:15px;font-weight:500">Results</a>
+          <a href="#" style="font-size:15px;font-weight:500">About</a>
+        </nav>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="#" style="font-size:15px;font-weight:500">Log in</a>
+          <a href="#"
+            style="background:{{accent}};color:#16213E;padding:10px 20px;border-radius:4px;font-size:15px;font-weight:600">Enroll
+            now</a>
+        </div>
+      </header>
+
+      <section style="display:flex;flex-wrap:wrap;gap:48px;padding:80px 64px;align-items:center">
+        <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:24px;min-width:0">
+          <h1 style="font-size:48px;line-height:1.15;color:#16213E">Learn physics and chemistry the way toppers do</h1>
+          <p style="font-size:17px;line-height:1.6;color:#5B6478;max-width:480px;margin:0">Structured video courses,
+            weekly tests and doubt-clearing sessions for NEET and JEE aspirants — taught by faculty who've mentored
+            2,000+ selections.</p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap">
+            <a href="Lesson.dc.html"
+              style="background:#16213E;color:#F6F4EF;padding:14px 28px;border-radius:4px;font-size:16px;font-weight:600">Browse
+              courses</a>
+            <a href="#"
+              style="border:1.5px solid #16213E;color:#16213E;padding:12.5px 28px;border-radius:4px;font-size:16px;font-weight:600">Watch
+              a free class</a>
+          </div>
+          <div style="display:flex;gap:32px;padding-top:16px;flex-wrap:wrap">
+            <div>
+              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif">38,000+</div>
+              <div style="font-size:13px;color:#5B6478">students enrolled</div>
+            </div>
+            <div>
+              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif">2,000+</div>
+              <div style="font-size:13px;color:#5B6478">NEET/JEE selections</div>
+            </div>
+            <div>
+              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif">4.8/5</div>
+              <div style="font-size:13px;color:#5B6478">average rating</div>
+            </div>
           </div>
         </div>
-        <div style="color:#F6F4EF">
-          <div style="font-size:15px;font-weight:600">Newton's Laws of Motion — Chapter 4</div>
-          <div style="font-size:13px;color:#9AA4BE;margin-top:4px">Physics Foundation · 42 min</div>
-        </div>
-        <div style="height:4px;background:#2E3B63;border-radius:2px;overflow:hidden"><div style="width:62%;height:100%;background:{{accent}}"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding:48px 64px 80px;display:flex;flex-direction:column;gap:32px">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px">
-      <h2 style="font-size:28px;color:#16213E">Popular courses</h2>
-      <a href="#" style="font-size:15px;font-weight:600">View all courses</a>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
-
-      <div style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
-        <div style="height:140px;background:#2F7A6B;display:flex;align-items:center;justify-content:center">
-          <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Physics</span>
-        </div>
-        <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
-          <h3 style="font-size:17px">NEET Physics Foundation</h3>
-          <p style="font-size:14px;color:#5B6478;margin:0">48 video lessons · Weekly tests · Doubt forum</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
-            <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹4,999</span>
-            <a href="Lesson.dc.html" style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
+        <div style="flex:1 1 420px;min-width:320px">
+          <div style="background:#16213E;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:16px">
+            <div
+              style="background:#223158;border-radius:8px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center">
+              <div
+                style="width:64px;height:64px;border-radius:50%;background:{{accent}};display:flex;align-items:center;justify-content:center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#16213E">
+                  <path d="M8 5v14l11-7z"></path>
+                </svg>
+              </div>
+            </div>
+            <div style="color:#F6F4EF">
+              <div style="font-size:15px;font-weight:600">Newton's Laws of Motion — Chapter 4</div>
+              <div style="font-size:13px;color:#9AA4BE;margin-top:4px">Physics Foundation · 42 min</div>
+            </div>
+            <div style="height:4px;background:#2E3B63;border-radius:2px;overflow:hidden">
+              <div style="width:62%;height:100%;background:{{accent}}"></div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
-        <div style="height:140px;background:#C65D3B;display:flex;align-items:center;justify-content:center">
-          <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Chemistry</span>
+      <section style="padding:48px 64px 80px;display:flex;flex-direction:column;gap:32px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px">
+          <h2 style="font-size:28px;color:#16213E">Popular courses</h2>
+          <a href="#" style="font-size:15px;font-weight:600">View all courses</a>
         </div>
-        <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
-          <h3 style="font-size:17px">JEE Chemistry Mastery</h3>
-          <p style="font-size:14px;color:#5B6478;margin:0">60 video lessons · Mock papers · Doubt forum</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
-            <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹5,499</span>
-            <a href="Lesson.dc.html" style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+
+          <div
+            style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
+            <div style="height:140px;background:#2F7A6B;display:flex;align-items:center;justify-content:center">
+              <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Physics</span>
+            </div>
+            <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
+              <h3 style="font-size:17px">NEET Physics Foundation</h3>
+              <p style="font-size:14px;color:#5B6478;margin:0">48 video lessons · Weekly tests · Doubt forum</p>
+              <div
+                style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
+                <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹4,999</span>
+                <a href="Lesson.dc.html"
+                  style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
-        <div style="height:140px;background:#4C6EF5;display:flex;align-items:center;justify-content:center">
-          <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Biology</span>
-        </div>
-        <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
-          <h3 style="font-size:17px">NEET Biology Complete</h3>
-          <p style="font-size:14px;color:#5B6478;margin:0">72 video lessons · NCERT line-by-line · Doubt forum</p>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
-            <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹5,999</span>
-            <a href="Lesson.dc.html" style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
+          <div
+            style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
+            <div style="height:140px;background:#C65D3B;display:flex;align-items:center;justify-content:center">
+              <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Chemistry</span>
+            </div>
+            <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
+              <h3 style="font-size:17px">JEE Chemistry Mastery</h3>
+              <p style="font-size:14px;color:#5B6478;margin:0">60 video lessons · Mock papers · Doubt forum</p>
+              <div
+                style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
+                <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹5,499</span>
+                <a href="Lesson.dc.html"
+                  style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
+              </div>
+            </div>
           </div>
+
+          <div
+            style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
+            <div style="height:140px;background:#4C6EF5;display:flex;align-items:center;justify-content:center">
+              <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Biology</span>
+            </div>
+            <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
+              <h3 style="font-size:17px">NEET Biology Complete</h3>
+              <p style="font-size:14px;color:#5B6478;margin:0">72 video lessons · NCERT line-by-line · Doubt forum</p>
+              <div
+                style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
+                <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹5,999</span>
+                <a href="Lesson.dc.html"
+                  style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
+      </section>
 
+      <footer
+        style="padding:32px 64px;border-top:1px solid #DCD6C8;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div style="font-size:14px;color:#5B6478">© 2026 Sharadha Institute</div>
+        <div style="display:flex;gap:24px">
+          <a href="#" style="font-size:14px">Privacy</a>
+          <a href="#" style="font-size:14px">Terms</a>
+          <a href="#" style="font-size:14px">Contact</a>
+        </div>
+      </footer>
     </div>
-  </section>
-
-  <footer style="padding:32px 64px;border-top:1px solid #DCD6C8;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
-    <div style="font-size:14px;color:#5B6478">© 2026 Anchor Institute</div>
-    <div style="display:flex;gap:24px">
-      <a href="#" style="font-size:14px">Privacy</a>
-      <a href="#" style="font-size:14px">Terms</a>
-      <a href="#" style="font-size:14px">Contact</a>
-    </div>
-  </footer>
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E2A33B","options":["#E2A33B","#C65D3B","#2F7A6B","#4C6EF5"]},"$preview":{"width":1440,"height":1480}}'>
+  </x-dc>
+  <script type="text/x-dc" data-dc-script
+    data-props='{"accent":{"editor":"color","default":"#E2A33B","options":["#E2A33B","#C65D3B","#2F7A6B","#4C6EF5"]},"$preview":{"width":1440,"height":1480}}'>
 class Component extends DCLogic {
   renderVals() {
     return { accent: this.props.accent ?? '#E2A33B' };
@@ -133,4 +189,5 @@ class Component extends DCLogic {
 }
 </script>
 </body>
+
 </html>
