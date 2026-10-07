@@ -24,11 +24,42 @@
 
         a {
           color: #16213E;
-          text-decoration: none
+          text-decoration: none;
+          transition: all 0.2s ease;
         }
 
         a:hover {
           color: #C8903E
+        }
+        
+        .btn {
+          display: inline-block;
+          transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(22, 33, 62, 0.15);
+          filter: brightness(1.05);
+        }
+
+        .course-card {
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .course-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 24px rgba(22, 33, 62, 0.1);
+        }
+
+        .play-card {
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+
+        .play-card:hover {
+          transform: scale(1.02);
         }
 
         h1,
@@ -51,7 +82,7 @@
         </nav>
         <div style="display:flex;gap:12px;align-items:center">
           <a href="#" style="font-size:15px;font-weight:500">Log in</a>
-          <a href="#"
+          <a href="#" class="btn"
             style="background:{{accent}};color:#16213E;padding:10px 20px;border-radius:4px;font-size:15px;font-weight:600">Enroll
             now</a>
         </div>
@@ -64,30 +95,30 @@
             weekly tests and doubt-clearing sessions for NEET and JEE aspirants — taught by faculty who've mentored
             2,000+ selections.</p>
           <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <a href="Lesson.dc.html"
+            <a href="Lesson.dc.html" class="btn"
               style="background:#16213E;color:#F6F4EF;padding:14px 28px;border-radius:4px;font-size:16px;font-weight:600">Browse
               courses</a>
-            <a href="#"
+            <a href="#" class="btn"
               style="border:1.5px solid #16213E;color:#16213E;padding:12.5px 28px;border-radius:4px;font-size:16px;font-weight:600">Watch
               a free class</a>
           </div>
           <div style="display:flex;gap:32px;padding-top:16px;flex-wrap:wrap">
             <div>
-              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif">38,000+</div>
+              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif"><span class="counter" data-target="38000">0</span>+</div>
               <div style="font-size:13px;color:#5B6478">students enrolled</div>
             </div>
             <div>
-              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif">2,000+</div>
+              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif"><span class="counter" data-target="2000">0</span>+</div>
               <div style="font-size:13px;color:#5B6478">NEET/JEE selections</div>
             </div>
             <div>
-              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif">4.8/5</div>
+              <div style="font-size:24px;font-weight:700;font-family:'Literata',serif"><span class="counter" data-target="4.8" data-decimals="1">0</span>/5</div>
               <div style="font-size:13px;color:#5B6478">average rating</div>
             </div>
           </div>
         </div>
         <div style="flex:1 1 420px;min-width:320px">
-          <div style="background:#16213E;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:16px">
+          <div class="play-card" style="background:#16213E;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:16px">
             <div
               style="background:#223158;border-radius:8px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center">
               <div
@@ -115,7 +146,7 @@
         </div>
         <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
 
-          <div
+          <div class="course-card"
             style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
             <div style="height:140px;background:#2F7A6B;display:flex;align-items:center;justify-content:center">
               <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Physics</span>
@@ -126,13 +157,13 @@
               <div
                 style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
                 <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹4,999</span>
-                <a href="Lesson.dc.html"
+                <a href="Lesson.dc.html" class="btn"
                   style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
               </div>
             </div>
           </div>
 
-          <div
+          <div class="course-card"
             style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
             <div style="height:140px;background:#C65D3B;display:flex;align-items:center;justify-content:center">
               <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Chemistry</span>
@@ -143,13 +174,13 @@
               <div
                 style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
                 <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹5,499</span>
-                <a href="Lesson.dc.html"
+                <a href="Lesson.dc.html" class="btn"
                   style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
               </div>
             </div>
           </div>
 
-          <div
+          <div class="course-card"
             style="border:1px solid #DCD6C8;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff">
             <div style="height:140px;background:#4C6EF5;display:flex;align-items:center;justify-content:center">
               <span style="color:#F6F4EF;font-family:'Literata',serif;font-size:18px;font-weight:600">Biology</span>
@@ -160,7 +191,7 @@
               <div
                 style="display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px">
                 <span style="font-size:18px;font-weight:700;font-family:'Literata',serif">₹5,999</span>
-                <a href="Lesson.dc.html"
+                <a href="Lesson.dc.html" class="btn"
                   style="background:{{accent}};color:#16213E;padding:8px 16px;border-radius:4px;font-size:14px;font-weight:600">Enroll</a>
               </div>
             </div>
@@ -185,6 +216,33 @@
 class Component extends DCLogic {
   renderVals() {
     return { accent: this.props.accent ?? '#E2A33B' };
+  }
+  
+  componentDidMount() {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const target = parseFloat(counter.getAttribute('data-target'));
+      const decimals = parseInt(counter.getAttribute('data-decimals') || 0);
+      const duration = 2000;
+      const stepTime = 20;
+      const steps = duration / stepTime;
+      const step = target / steps;
+      let current = 0;
+      
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        
+        if (decimals > 0) {
+          counter.innerText = current.toFixed(decimals);
+        } else {
+          counter.innerText = Math.floor(current).toLocaleString();
+        }
+      }, stepTime);
+    });
   }
 }
 </script>
